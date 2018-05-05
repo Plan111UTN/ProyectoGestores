@@ -5,13 +5,13 @@
  */
 package com.plan111.modelo;
 
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
@@ -19,12 +19,12 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name="tb_area")
+@Table(name="tb_tipoMotor")
 @Getter
 @Setter
 @NoArgsConstructor
 public class TipoMotor {
-    @id
+    @Id
     private int idTipoMotor;
     @Column(name="descripcion")
     private String descripcion;
