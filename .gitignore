@@ -1,0 +1,9 @@
+# Este archivo sirve para omitir los archivos o directorios que no queremos subir al repositorio.
+
+# Estructura para IDE IntellijIDEA
+.idea/*
+out/*
+*.iml
+
+# Otros
+/target/
