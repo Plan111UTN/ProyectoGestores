@@ -28,20 +28,5 @@ public class Modelo implements Serializable
     private int idModelo;
     @Column(name="Descripcion")
     private String descripcion;
-
-    public int getIdModelo() {
-        return idModelo;
-    }
-
-    public void setIdModelo(int idModelo) {
-        this.idModelo = idModelo;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
+    
 }
