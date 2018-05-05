@@ -16,7 +16,7 @@ import lombok.Setter;
 
 /**
  *
- * @author Nicolas Oliva
+ * @author Matias Gomez
  */
 @Entity
 @Table(name="tb_marca")
@@ -26,5 +26,5 @@ public class Marca implements Serializable
     @Id
     private int idMarca;
     private String descripcion;
-    
+   
 }
