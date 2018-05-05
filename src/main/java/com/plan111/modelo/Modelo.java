@@ -17,6 +17,7 @@ import lombok.Setter;
 /**
  *
  * @author Nicolas Oliva
+ * @author User
  */
 @Entity
 @Table(name="tb_modelo")
