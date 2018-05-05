@@ -5,6 +5,7 @@
  */
 package com.plan111.vistas;
 
+import com.plan111.dao.AutoDAO;
 import com.plan111.modelo.Auto;
 import com.plan111.modelo.Marca;
 import com.plan111.modelo.Modelo;
@@ -41,7 +42,8 @@ public class AutoRun {
         auto.setMotor(tipo);
         auto.setFechaFinFabricacion(cal.getTime());
         auto.setFechaInicioFabricacion(cal.getTime());
-        
+        AutoDAO autoDao = new AutoDAO();
+        autoDao.agregarAuto(auto);
     }
     
 }
