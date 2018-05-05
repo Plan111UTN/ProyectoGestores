@@ -5,6 +5,11 @@
  */
 package com.plan111.modelo;
 
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,10 +18,15 @@ import lombok.Setter;
  *
  * @author Nicolas Oliva
  */
+@Entity
+@Table(name="tb_marca")
 @Getter @Setter @NoArgsConstructor
-public class Marca 
+public class Marca implements Serializable 
 {
+    @Id
+    @Column(name="idMarca")
     private int idMarca;
+    
     private String descripcion;
     
 }
