@@ -20,12 +20,26 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="tb_tipoMotor")
-@Getter
-@Setter
-@NoArgsConstructor
+@Getter @Setter @NoArgsConstructor
 public class TipoMotor {
     @Id
     private int idTipoMotor;
     @Column(name="descripcion")
     private String descripcion;
+
+    public int getIdTipoMotor() {
+        return idTipoMotor;
+    }
+
+    public void setIdTipoMotor(int idTipoMotor) {
+        this.idTipoMotor = idTipoMotor;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
 }

@@ -44,5 +44,52 @@ public class Auto implements Serializable
     private Date fechaInicioFabricacion;
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date fechaFinFabricacion;
-    
+
+    public int getIdAuto() {
+        return idAuto;
+    }
+
+    public void setIdAuto(int idAuto) {
+        this.idAuto = idAuto;
+    }
+
+    public TipoMotor getMotor() {
+        return motor;
+    }
+
+    public void setMotor(TipoMotor motor) {
+        this.motor = motor;
+    }
+
+    public Modelo getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(Modelo modelo) {
+        this.modelo = modelo;
+    }
+
+    public Marca getMarca() {
+        return marca;
+    }
+
+    public void setMarca(Marca marca) {
+        this.marca = marca;
+    }
+
+    public Date getFechaInicioFabricacion() {
+        return fechaInicioFabricacion;
+    }
+
+    public void setFechaInicioFabricacion(Date fechaInicioFabricacion) {
+        this.fechaInicioFabricacion = fechaInicioFabricacion;
+    }
+
+    public Date getFechaFinFabricacion() {
+        return fechaFinFabricacion;
+    }
+
+    public void setFechaFinFabricacion(Date fechaFinFabricacion) {
+        this.fechaFinFabricacion = fechaFinFabricacion;
+    }
 }
