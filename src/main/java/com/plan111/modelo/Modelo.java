@@ -16,7 +16,6 @@ import lombok.Setter;
 
 /**
  *
- * @author Nicolas Oliva
  * @author User
  */
 @Entity
