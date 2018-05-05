@@ -3,9 +3,9 @@
 <hibernate-configuration>
   <session-factory>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="connection.url">jdbc:mysql://localhost:3306/hab_rrhh?createDatabaseIfNotExist=true&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;maxReconnects=10&amp;useSSL=false</property>
-    <property name="connection.username"></property>
-    <property name="connection.password"></property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/plan111?createDatabaseIfNotExist=true&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;maxReconnects=10&amp;useSSL=false</property>
+    <property name="connection.username">usuario</property>
+    <property name="connection.password">password</property>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.max_fetch_depth">3</property>
