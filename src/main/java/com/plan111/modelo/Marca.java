@@ -24,9 +24,7 @@ import lombok.Setter;
 public class Marca implements Serializable 
 {
     @Id
-    @Column(name="idMarca")
     private int idMarca;
-    
     private String descripcion;
     
 }
