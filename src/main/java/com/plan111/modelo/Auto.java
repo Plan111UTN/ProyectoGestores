@@ -7,8 +7,12 @@ package com.plan111.modelo;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
@@ -29,15 +33,16 @@ public class Auto implements Serializable
 {
     
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="idAuto")    
     private int idAuto;    
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="idMotor")
     private TipoMotor motor;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="idModelo")
     private Modelo modelo;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="idMarca")
     private Marca marca;
     @Temporal(javax.persistence.TemporalType.DATE)

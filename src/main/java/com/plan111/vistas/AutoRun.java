@@ -27,16 +27,18 @@ public class AutoRun {
         // TODO code application logic here
         Session session = HibernateUtil.getSessionFactory().openSession();
         Marca marc = new Marca();
-        marc.setIdMarca(1);
-        marc.setDescripcion("Ferrari");
+//        marc.setIdMarca(1);
+        marc.setDescripcion("FerrariA");
         Modelo modelo = new Modelo();
+        modelo.setDescripcion("MF255A");
+//        modelo.setIdModelo(1);
 //        modelo.set
         TipoMotor tipo = new TipoMotor();
-        tipo.setIdTipoMotor(1);
-        tipo.setDescripcion("Gasolero");
+//        tipo.setIdTipoMotor(1);
+        tipo.setDescripcion("GasoleroA");
         Calendar cal = Calendar.getInstance();
         Auto auto = new Auto();
-        auto.setIdAuto(1);
+//        auto.setIdAuto(1);
         auto.setMarca(marc);
         auto.setModelo(modelo);
         auto.setMotor(tipo);

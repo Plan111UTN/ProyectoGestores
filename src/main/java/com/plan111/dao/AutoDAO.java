@@ -87,38 +87,18 @@ public class AutoDAO {
             session.close();
         }
         return objAuto;
-    }
-
-//    public Auto comprobarCredenciales(Auto auto) {
-//        Auto objAuto = new Auto();
-//        Session session = HibernateUtil.getSessionFactory().openSession();
-//        try {
-//            objAuto = (Auto) session.createQuery("FROM Auto WHERE LOGIN  = '" + auto.getLOGIN() + "' and CONTRASENA ='" + auto.getCONTRASENA() + "'").uniqueResult();
-//            if (objAuto == null) {
-//                objAuto = null;
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        } finally {
-//            session.flush();
-//            session.close();
-//        }
-//        return objAuto;
-//    }   
+    } 
     
     public List<Auto> listarAuto() {
-//        Transaction tx = null;
+
         List<Auto> listaAuto = new ArrayList();
         Auto objAuto = new Auto();
         Session session = HibernateUtil.getSessionFactory().openSession();
         try {
-//            tx = session.beginTransaction();
-            listaAuto = (List<Auto>) session.createQuery("from Auto").list();
-//            session.getTransaction().commit();
+            listaAuto = (List<Auto>) session.createQuery("From Auto").list();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-//            session.flush();
             session.close();
         }
         return listaAuto;
