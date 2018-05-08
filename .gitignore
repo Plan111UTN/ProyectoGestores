@@ -7,3 +7,5 @@ out/*
 
 # Otros
 /target/
+/target/*.jar
+/target/*.class
