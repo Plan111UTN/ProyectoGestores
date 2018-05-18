@@ -27,15 +27,15 @@ public class AutoRun {
         // TODO code application logic here
         Session session = HibernateUtil.getSessionFactory().openSession();
         Marca marc = new Marca();
-//        marc.setIdMarca(1);
-        marc.setDescripcion("FerrariA");
+        marc.setIdMarca(3);
+        marc.setDescripcion("Fiat");
         Modelo modelo = new Modelo();
-        modelo.setDescripcion("MF255A");
-//        modelo.setIdModelo(1);
+        modelo.setDescripcion("Palio");
+        modelo.setIdModelo(6);
 //        modelo.set
         TipoMotor tipo = new TipoMotor();
-//        tipo.setIdTipoMotor(1);
-        tipo.setDescripcion("GasoleroA");
+        tipo.setIdTipoMotor(2);
+        tipo.setDescripcion("Gasolero");
         Calendar cal = Calendar.getInstance();
         Auto auto = new Auto();
 //        auto.setIdAuto(1);
@@ -46,6 +46,7 @@ public class AutoRun {
         auto.setFechaInicioFabricacion(cal.getTime());
         AutoDAO autoDao = new AutoDAO();
         autoDao.agregarAuto(auto);
+        System.exit(0);
     }
     
 }

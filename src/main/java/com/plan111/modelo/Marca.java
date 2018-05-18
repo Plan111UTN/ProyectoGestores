@@ -26,7 +26,7 @@ import lombok.Setter;
 public class Marca implements Serializable 
 {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private int idMarca;
     @Column(unique = true)
     private String descripcion;
