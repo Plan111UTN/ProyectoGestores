@@ -5,6 +5,9 @@
 
     <!--Las configuraciones están en: resources/hibernate.properties-->
 
+    <mapping class="com.plan111.modelo.Localidad"/>
+    <mapping class="com.plan111.modelo.Barrio"/>
+    <mapping class="com.plan111.modelo.Calle"/>
     <mapping class="com.plan111.modelo.Auto"/>
     <mapping class="com.plan111.modelo.Marca"/>
     <mapping class="com.plan111.modelo.Modelo"/>
