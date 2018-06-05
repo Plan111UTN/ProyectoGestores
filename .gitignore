@@ -9,3 +9,4 @@ out/*
 /target/
 /target/*.jar
 /target/*.class
+src/main/resources/hibernate.properties
